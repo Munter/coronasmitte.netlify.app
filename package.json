@@ -1,0 +1,17 @@
+{
+  "name": "coronasmitte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assetgraph": "^6.0.7",
+    "netlify-cli": "^2.52.0",
+    "servor": "^4.0.2"
+  }
+}

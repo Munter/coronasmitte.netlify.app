@@ -1,0 +1,3 @@
+[build]
+  build = "node src/scape"
+  publish = "dist"
