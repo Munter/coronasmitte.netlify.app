@@ -22,15 +22,24 @@ async function main() {
       $or: [
         {
           crossorigin: false,
-          type: { $nin: ["HtmlAnchor"] },
-        },
-        {
-          crossorigin: false,
           type: "HtmlAnchor",
           href: (href) =>
             ["coronavirus-i-danmark", "coronavirus-in-denmark"].some((part) =>
               href.includes(part)
             ),
+        },
+        {
+          type: { $nin: ["HtmlAnchor"] },
+          to: {
+            hostname: "politi.dk",
+          },
+        },
+        {
+          type: "HtmlAnchor",
+          to: {
+            hostname: "politi.dk",
+            extension: { $in: [".pdf", ".png"] },
+          },
         },
       ],
     },
