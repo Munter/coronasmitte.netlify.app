@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "assetgraph": "^6.0.7",
+    "assetgraph": "^6.6.0",
     "netlify-cli": "^2.52.0",
     "servor": "^4.0.2"
   }
